@@ -12,7 +12,7 @@ iChat is a real-time chat web application built using **Node.js**, **Express**, 
 - 🧑 Dynamic user naming with live name change updates
 - 👋 Toast notifications when users join, leave, or change their name
 - 🕓 Timestamps that update in real-time using Moment.js
-- 💡 Minimal, responsive UI with vanilla JS and CSS (no frameworks)
+- 💡 Minimal, responsive UI with vanilla JS and CSS
 
 ---
 
