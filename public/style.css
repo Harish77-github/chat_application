@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.main {
+  border: 5px solid #dddddd;
+  border-radius: 20px;
+}
+
+.name {
+  display: flex;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 8px 16px;
+  color: #7e7e7e;
+  background-color: #ebebeb;
+}
+
+.name > span {
+  color: #bbb;
+}
+
+.name-input {
+  font-size: 24px;
+  font-weight: 700;
+  color: #7e7e7e;
+  background-color: #ebebeb;
+  flex-grow: 1;
+  border: none;
+  margin: 0 12px;
+  outline: none;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  width: 400px;
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.message-left,
+.message-right {
+  padding: 8px 12px;
+  margin: 12px;
+  max-width: 250px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.message-left {
+  border-radius: 20px 20px 20px 0;
+  align-self: flex-start;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(112, 73, 143, 0.25);
+}
+
+.message-right {
+  border-radius: 20px 20px 0 20px;
+  align-self: flex-end;
+  background-color: #2d2d2d;
+  color: #fff;
+  box-shadow: 2px 2px 8px rgba(112, 73, 143, 0.25);
+}
+
+.message-left > p > span,
+.message-right > p > span {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 14px;
+  padding: 0 16px 16px 16px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-input {
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  padding: 0 12px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+.send-button {
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  padding: 0px 20px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.v-divider {
+  height: 48px;
+  width: 2px;
+  background-color: #f6f6f6;
+}
+
+#clients-total {
+  margin: 20px 0;
+  color: #7e7e7e;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  opacity: 0.95;
+  z-index: 9999;
+  font-size: 14px;
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 0.95; transform: translateY(0); }
+  90% { opacity: 0.95; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
